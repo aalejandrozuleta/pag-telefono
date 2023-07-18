@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ColorFondo:#6e7f81;
+    --azul:rgb(29, 91, 150);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: var(--ColorFondo);
+
+    top: 0;
+    position: sticky;
+}
+
+#logoEmpresa {
+    object-fit: contain;
+    width: 10%;
+    height: 80%;
+    margin: auto 20px;
+}
+
+nav {
+    width: 50%;
+}
+
+.menuNav {
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuNav li {
+    /* margin: auto 15px; */
+    width: 15%;
+    height: 40%;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menuNav li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.menuNav li:hover {
+    background-color: rgb(166, 181, 185);
+}
+
+
+/*  */
+
+#promocional {
+    background-color: var(--ColorFondo);
+    display: flex;
+    padding-top: 80px;
+}
+
+#iphoneImg {
+    width: 50%;
+    margin-left: 80px;
+}
+
+#lateralPromo {
+    width: 50%;
+}
+
+#tituloPromo {
+    font-size: 60px;
+    color: #fff;
+}
+
+#textosPromo {
+    width: 80%;
+}
+
+#textoUno {
+    color: #e2e2e2;
+}
+
+#textoDos {
+    color: #9e9e9e;
+    margin-top: 10px;
+}
+
+#botonoes {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.botonesPromo {
+    width: 35%;
+    height: 50px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+}
+
+#botonCompra {
+    background-color: var(--azul);
+    box-shadow: 0px 5px 5px rgb(218, 218, 218);
+    margin-right: 20px;
+}
+
+
+#botonRect {
+    background-color: transparent;
+    margin-left: 20px;
+}
+
+#botonRect:hover {
+    background-color: var(--azul);
+    box-shadow: 0px 5px 5px rgb(218, 218, 218);
+}
+
+#lineaBoton {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#logoEmpresas {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dadada;
+}
+
+/*  */
+
+#desarolladores {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+
+.bloquesInfo {
+    width: 30%;
+    text-align: center;
+}
+
+.desarolladoresImg {
+    display: flex;
+    justify-content: center;
+}
+
+.bloquesInfo h3,.botonesBloques {
+    margin-top: 20px;
+}
+
+.bloquesInfo p {
+    color: #9e9e9e;
+}
+
+.botonesBloques {
+    width: 30%;
+    height: 35px;
+    background-color: rgb(52, 92, 201);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#proyectos{
+    margin-top: 60px;
+    padding: 0 60px;
+}
+#tiutloProyectos {
+    display: flex;
+}
+
+#tiutloProyectos img {
+    object-fit: contain;
+}
+
+#tiutloProyectos p {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #9e9e9e;
+}
+
+#proyectoImgs {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagenesProyecto {
+    width: 20%;
+}
+
+/*  */
+
+#blog {
+    display: flex;
+    margin-top: 60px;
+    padding: 0 60px;
+}
+
+.bloqueBlog {
+    width: 50%;
+}
+
+.tituloBlog {
+    display: flex;
+}
+
+.tituloBlog img {
+    object-fit: contain;
+}
+
+.tituloBlog p {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #9e9e9e;
+}
+
+.textoBlog{
+    margin-top: 10px;
+    display: flex;
+    width: 90%;
+}
+
+.textosImganes {
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+}
+
+.textoBlog div {
+    margin: auto 15px auto;
+    padding-left: 20px;
+}
+
+.textoBlog div h4 {
+    color: #9e9e9e;
+}
+
+.textoBlog div p {
+    color: #666666;
+}
+
+.textoBlog div p a {
+    color: var(--azul);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.finalBlog {
+    margin-top: 10px;
+    color: var(--azul);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+#postTwitter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#postTwitter p {
+    margin: 20px auto;
+}
+
+.inicioTextos {
+    color: #9e9e9e;
+}
+
+.colorTexto{
+    color: rgb(0, 162, 255);
+}
+
+.fechaPost {
+    padding-top: 10px;
+    color: #9e9e9e;
+}
+
+/*  */
+
+footer  {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border-top: 2px solid #9e9e9e;
+    margin: 30px auto 0;
+    padding-top: 10px;
+}
