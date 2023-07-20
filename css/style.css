@@ -5,12 +5,12 @@
 }
 
 :root {
-    --ColorFondo:#6e7f81;
-    --azul:rgb(29, 91, 150);
+    --ColorFondo: #6e7f81;
+    --azul: rgb(29, 91, 150);
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -45,13 +45,12 @@ nav {
 .menuNav li {
     /* margin: auto 15px; */
     width: 15%;
-    height: 40%;
+    height: 50%;
     border-radius: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .menuNav li a {
     color: #fff;
@@ -60,9 +59,8 @@ nav {
 }
 
 .menuNav li:hover {
-    background-color: rgb(166, 181, 185);
+    background-color: rgb(181, 208, 216);
 }
-
 
 /*  */
 
@@ -123,10 +121,10 @@ nav {
     margin-right: 20px;
 }
 
-
 #botonRect {
     background-color: transparent;
     margin-left: 20px;
+    /* width: 60%; */
 }
 
 #botonRect:hover {
@@ -156,7 +154,6 @@ nav {
     margin-top: 60px;
 }
 
-
 .bloquesInfo {
     width: 30%;
     text-align: center;
@@ -167,7 +164,8 @@ nav {
     justify-content: center;
 }
 
-.bloquesInfo h3,.botonesBloques {
+.bloquesInfo h3,
+.botonesBloques {
     margin-top: 20px;
 }
 
@@ -184,10 +182,11 @@ nav {
     color: #fff;
 }
 
-#proyectos{
+#proyectos {
     margin-top: 60px;
     padding: 0 60px;
 }
+
 #tiutloProyectos {
     display: flex;
 }
@@ -239,7 +238,7 @@ nav {
     color: #9e9e9e;
 }
 
-.textoBlog{
+.textoBlog {
     margin-top: 10px;
     display: flex;
     width: 90%;
@@ -277,8 +276,7 @@ nav {
     text-transform: capitalize;
 }
 
-
-#postTwitter{
+#postTwitter {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -293,7 +291,7 @@ nav {
     color: #9e9e9e;
 }
 
-.colorTexto{
+.colorTexto {
     color: rgb(0, 162, 255);
 }
 
@@ -304,11 +302,234 @@ nav {
 
 /*  */
 
-footer  {
+footer {
     display: flex;
     justify-content: space-between;
     width: 90%;
     border-top: 2px solid #9e9e9e;
     margin: 30px auto 0;
     padding-top: 10px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+    }
+    #logoEmpresa {
+        padding-top: 15px;
+        width: 80%;
+        height: 60%;
+    }
+
+    nav {
+        width: 100%;
+        height: 100%;
+    }
+    .menuNav {
+        width: 100%;
+    }
+
+    .menuNav li {
+        width: 20%;
+        height: 100%;
+    }
+
+    #promocional {
+        margin: 0;
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #iphoneImg {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #iphoneImg img {
+        width: 50%;
+    }
+
+    #lateralPromo {
+        width: 100%;
+    }
+
+    #tituloPromo {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #textosPromo {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #botonoes {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #logoEmpresas img {
+        width: 10%;
+        height: 80%;
+    }
+
+    #desarolladores {
+        margin: 10px 0;
+        flex-direction: column;
+    }
+
+    .bloquesInfo {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .bloquesInfo p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #proyectos {
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    #tiutloProyectos {
+        padding: 0 20px;
+    }
+
+    #blog {
+        flex-direction: column;
+        margin: 15px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .bloqueBlog {
+        width: 100%;
+    }
+
+    .tituloBlog {
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .textoBlog {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .textoBlog figure {
+        margin: 0 auto;
+    }
+
+    .finalBlog {
+        display: flex;
+        margin: 10px auto;
+        justify-content: center;
+    }
+
+    #postTwitter {
+        padding: 20px;
+    }
+
+    #postTwitter p {
+        padding: 0 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    #promocional {
+        padding: 10px 0;
+    }
+
+    #iphoneImg {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #iphoneImg img {
+        width: 80%;
+        height: 80%;
+    }
+
+    #tituloPromo {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #lateralPromo {
+        padding: 20px;
+        margin: auto;
+    }
+
+    #textosPromo {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #botonoes {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    #botonoes button {
+        width: 100%;
+    }
+
+    #blog {
+        flex-direction: column;
+    }
+
+    .textoBlog {
+        width: 90%;
+    }
+
+    .bloqueBlog {
+        width: 100%;
+    }
+
+    .finalBlog {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #lateralPromo {
+        margin: auto;
+    }
+    #tituloPromo {
+        font-size: 35px;
+        text-align: center;
+    }
+    #textosPromo {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #botonoes {
+        margin: 30px auto;
+    }
+
+    #botonoes button {
+        width: 100%;
+    }
 }
